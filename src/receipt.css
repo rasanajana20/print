@@ -120,17 +120,22 @@
 }
 
 /* ===== Print Optimization ===== */
+/* Hide buttons and inputs when printing */
 @media print {
-  .controls,
-  .btn {
-    display: none;
+  .no-print {
+    display: none !important;
   }
 
   .receipt-container {
     box-shadow: none;
     background: white;
   }
+
+  .receipt {
+    width: 100%;
+  }
 }
+
 
 /* ===== Responsive (Mobile View) ===== */
 @media (max-width: 480px) {
