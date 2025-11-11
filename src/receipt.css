@@ -30,9 +30,8 @@
 
 /* ===== Table Styling ===== */
 .table {
-  width: 95%;
-  /* border-collapse: collapse; */
-  margin: 15px 0;
+  width: 100%;
+  border-collapse: collapse;
   font-size: 14px;
 }
 
@@ -44,21 +43,16 @@
 }
 
 .table th {
-  background: #007bff;
-  color: white;
   border-radius: 5px 5px 0 0;
 }
 
-/* ===== Total Section ===== */
 .total {
   text-align: right;
   margin-top: 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #007bff;
 }
 
-/* ===== Controls Section ===== */
 .controls {
   display: flex;
   flex-direction: column;
@@ -80,7 +74,6 @@
   border-color: #007bff;
 }
 
-/* ===== Button Group ===== */
 .button-group {
   display: flex;
   justify-content: space-between;
@@ -103,7 +96,6 @@
   transform: scale(1.05);
 }
 
-/* ===== Button Colors ===== */
 .btn.add {
   background: #28a745;
   color: white;
@@ -119,8 +111,6 @@
   color: white;
 }
 
-/* ===== Print Optimization ===== */
-/* Hide buttons and inputs when printing */
 @media print {
   .no-print {
     display: none !important;
@@ -136,18 +126,12 @@
   }
 }
 
-
-/* ===== Responsive (Mobile View) ===== */
 @media (max-width: 480px) {
   .receipt-container {
     width: 90%;
     padding: 20px;
     margin: 20px auto;
     border-radius: 15px;
-  }
-
-  .receipt {
-    padding: 15px;
   }
 
   .title {
